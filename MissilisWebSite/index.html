@@ -1,0 +1,116 @@
+<!-- Indica que é a verção mais recente do HTML -->
+<!DOCTYPE html>
+<!-- Começa o código HTML -->
+<html lang="pt-br">
+<!-- Cabeçalho do sitte-->
+
+<head>
+  <!-- Define o conjunto de caracteres(UTF-8 => suporta acentos e emojis) -->
+  <meta charset="UTF-8">
+  <!-- Torna o site responsivo em dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Nome da págin -->
+  <title>Missilis Industry</title>
+  <!-- Ícone da aba/página -->
+  <link rel="icon" href="img/Missilis IconV2.png" type="image/png">
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <!-- Meu CSS Externo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Começa o corpo da página -->
+
+<body>
+  <!-- Barra de navegação "navbar" -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold" href="#">
+        <img src="img/Missilis IconV2.png" alt="Logo">
+        MISSI <span>LIS</span>
+      </a>
+
+      <!-- Botão -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto"> <!-- Centraliza -->
+          <a class="nav-link" href="#">Produtos</a>
+          <a class="nav-link" href="#">Pesquisa</a>
+          <a class="nav-link" href="#">Esquadrão</a>
+          <a class="nav-link" href="about.html">Sobre</a>
+          <a class="nav-link" href="contact.html">Contato</a>
+          <!-- Talvez icones de conta ou carrinho no futuro -->
+        </div>
+
+        <!-- Para baixar o jogo -->
+        <a class="btn custom-btn" href="#">Registre-se</a>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero => pasra chamar atenção -->
+  <section class="hero d-flex align-itens-end">
+    <div class="container hero-contain">
+
+      <div class="row">
+        <!-- TEXTO => não sei o que colocar aqui, vai esse exemplo por enquanto -->
+        <div class="col-lg-6 hero-content">
+          <p class="hero-tag">// Missilis Industry - Divisão de Armamento</p>
+
+          <h1 class="hero-title">
+            Armamento<br>
+            de <span>Precisão</span><br>
+            Absoluta
+          </h1>
+
+          <p class="hero-sub">
+            Projetamos o arsenal que mantém a humanidade de pé. Cada Nikke, cada disparo, cada vitória começa aqui.
+          </p>
+          <div class="hero-actions">
+            <a href="#" class="btn custom-btn">Ver Arsenal</a>
+            <a href="about.html" class="btn btn-outline-light btn-hero">Sobre a empresa</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- STATUS => Alguem vai ter que mudar isso depois -->
+      <div class="hero-stats d-flex">
+        <div class="stat-item">
+          <div class="stat-number">98<span>%</span></div>
+          <div class="stat-label">Taxa de Eficiência</div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-number">3<span>+</span></div>
+          <div class="stat-label">Gerações de Nikkes</div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Rounds Fabricados</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="dividir">
+
+  <!-- Manifesto/Frase de efeito -->
+  <div class="manifesto">
+    <div></div>
+  </div>
+
+
+</body>
+<!-- JS do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,205 @@
+/* Estilo geral da página */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html { scroll-behavior: smooth; } /* Adciona animação na paginas */
+
+body {
+    background: #0b0812;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #d6cdea;
+    font-size: 17px;
+    line-height: 1.6; /* Altura da caixa de linha */
+    padding-top: 70px;
+}
+
+/* Bara de navegação */
+.custom-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(8,10,12,0.92);
+    border-bottom: 1px solid #2a2238;
+    backdrop-filter: blur(6px); /* Eeito de desfoque */
+}
+
+/* LOGO */
+.navbar-brand {
+    color: #f3effa !important;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.navbar-brand span {
+    color: #8e44ad; /* parte roxa */
+}
+
+.navbar-brand img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+/* LINKS */
+.nav-link {
+    color: #9a8fb3 !important;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* efeito de linha embaixo */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 1px;
+    background: #8e44ad;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* BOTÃO */
+.custom-btn {
+    background: #8e44ad;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.custom-btn:hover {
+    background: #c77dff;
+    color: #f3effa;
+}
+
+/* HERO => agora que o ilho chara e a mãe não ve */
+.hero {
+    height: 50vh; /* Ocupa a tela toda, em teoria */
+    min-height: 700px; /* Altura minima */
+    position: relative;
+    
+    /* fundo com imagem + escurecimento */
+    background-color: #000;
+    color: #fff;
+}
+
+.hero-contain {
+    margin-top: 5%;
+}
+
+.hero-stats {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+
+    display: flex;
+    gap: 40px; /* Espaçamento uniorme */
+}
+
+/* Adcionar eeito de brilho roxo */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0; /*  define simultaneamente as distâncias top, right, bottom e left */
+
+    /* Novo */
+    background: radial-gradient(
+        circle at 70% 30%, 
+        rgba(128, 0, 255, 0.25), 
+        transparent 60%
+    );
+
+    pointer-events: none; /* não atrapalha cliques */
+}
+
+/* Estilo do texto */
+.hero-content {
+    padding-bottom: 80px;
+}
+
+/* Tag pequena */
+.hero-tag {
+    font-size: 12px;
+    color: #8e44ad;
+    letter-spacing: 2px;
+}
+
+/* Titulo grande do hero */
+.hero-title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.hero-title span {
+    color: #8e44ad;
+}
+
+/* Texto do hero */
+.hero-sub {
+    color: #aaa;
+    max-width: 400px;
+    margin-top: 15px;
+}
+
+/* Botões do hero*/
+.hero-actions {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
+.btn-hero {
+    padding: 8px 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+/* Itens */
+.stat-item {
+    text-align: right;
+}
+
+/* Numero/valor do item do hero */
+.stat-number {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.stat-number span {
+    color: #8e44ad;
+}
+
+/* Texto pequeno do hero */
+.stat-label {
+    font-size: 11px;
+    color: #bbb;
+    letter-spacing: 1px;
+}
+
+.dividir {
+    border: none;
+    border-top: 1px solid #2a2238;
+    margin: 0;
+}
