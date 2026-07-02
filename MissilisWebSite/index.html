@@ -26,7 +26,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
     <div class="container-fluid">
       <!-- Logo -->
-      <a class="navbar-brand fw-bold" href="#">
+      <a class="navbar-brand fw-bold" href="#home">
         <img src="img/Missilis IconV2.png" alt="Logo">
         MISSI <span>LIS</span>
       </a>
@@ -42,7 +42,7 @@
           <a class="nav-link" href="#">Produtos</a>
           <a class="nav-link" href="#">Pesquisa</a>
           <a class="nav-link" href="#">Esquadrão</a>
-          <a class="nav-link" href="about.html">Sobre</a>
+          <a class="nav-link" href="#sobre">Sobre</a>
           <a class="nav-link" href="contact.html">Contato</a>
           <!-- Talvez icones de conta ou carrinho no futuro -->
         </div>
@@ -55,7 +55,7 @@
   </nav>
 
   <!-- Hero => pasra chamar atenção -->
-  <section class="hero d-flex align-itens-end">
+  <section class="hero d-flex align-itens-end" id="home">
     <div class="container hero-contain">
 
       <div class="row">
@@ -103,9 +103,62 @@
   <hr class="dividir">
 
   <!-- Manifesto/Frase de efeito -->
-  <div class="manifesto">
-    <div></div>
+  <div class="manifesto text-center">
+    <div class="container manifesto-inner">
+      <blockquote class="manifesto-text">
+        Não vendemos esperança. Vendemos poder de fogo. E é com poder de fogo que a humanidade sobrevive.
+      </blockquote>
+      <cite class="manifesto-author">— Filosofia Missilis Industry</cite>
+    </div>
   </div>
+
+  <!-- Sobre -->
+  <section class="about-strip py-5" id="sobre">
+    <div class="container">
+      <div class="row align-itens-center g5">
+
+        <div class="col-md-6 reveal">
+          <p class="about-label">// Sobre a Missilis Industry</p>
+
+          <h2 class="section-title mb-4">
+            Forjados <span class="accent">em combate</span>,<br>provados no campo
+          </h2>
+
+          <p class="about-body">
+            A <strong>Missilis Industry</strong> é uma das principais manufaturas de armamentos e desenvolvedoras de
+            Nikkes
+            do mundo pós-invasão. Nossa missão é clara: fornecer ao comando as ferramentas necessárias para reconquistar
+            a
+            superfície.
+          </p>
+
+          <p class="about-body">
+            Com décadas de pesquisa aplicada, nossas <strong>Nikkes especializadas em artilharia pesada</strong> e
+            rifles de
+            longo alcance carregam o legado de uma empresa que nunca parou de inovar — mesmo quando o mundo desmoronava.
+          </p>
+
+          <div class="mt-4">
+            <div class="divider"></div>
+            <span class="about-footer">
+              REGISTRO CORP — MISSILIS GROUP &copy SURFACE RECOVERY PROGRAM
+            </span>
+          </div>
+        </div>
+        <!-- Imagem promocional -->
+        <div class="col-md-6 reveal">
+          <div class="about-image-block">
+            <img src="img/Missil-ar-ar.jpg" alt="Arsenal Missilis">
+            <!-- Detalhes -->
+            <div class="corner-top"></div>
+            <div class="corner-bottom"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
 
 </body>

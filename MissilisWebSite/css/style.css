@@ -203,3 +203,119 @@ body {
     border-top: 1px solid #2a2238;
     margin: 0;
 }
+
+/* Manifesto */
+.manifesto{
+    background: #1a1624;
+    border-top: 1px solid #2a2238;
+    border-bottom: 1px solid #2a2238;
+    padding: 80px 20px;
+    position: relative;
+}
+
+/* LIMITA LARGURA (Bootstrap já ajuda, mas reforça para não dar BO) */
+.manifesto-inner {
+    max-width: 700px;
+}
+
+.manifesto-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f3effa;
+    line-height: 1.4;
+    position: relative;
+}
+
+/* Aspas Decorativa Grande */
+.manifesto-text::before {
+    content: "“"; /* aspas */
+    position: absolute;
+    top: -40px;
+    left: -10px;
+    font-size: 80px;
+    color: #8e44ad;
+    opacity: 0.2;
+}
+
+.manifesto-author {
+    display: block;
+    margin-top: 25px;
+    font-size: 12px;
+    color: #9a8fb3;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Seção Sobre */
+.divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #8e44ad, transparent);
+    margin-bottom: 3rem;
+}
+.about-strip {
+    background-color: #0e0b14;
+    border-top: 1px solid #2a2238;
+    border-bottom: 1px solid #2a2238;
+}
+
+.about-label {
+    font-size: 15px;
+    color: #8e44ad;
+    letter-spacing: 2px;
+}
+
+.about-body {
+    font-size: 15px;
+    color: #9a8fb3;
+    line-height: 1.7;
+}
+
+.about-body strong {
+    color: #ffffff;
+}
+
+.about-footer {
+    font-size: 11px;
+    color: #7d7396;
+    letter-spacing: 2px;
+}
+
+/* Imagem do about */
+.about-image-block {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-image-block img {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.6) saturate(0.5);
+}
+
+.about-image-block::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(142,68,173,0.2), transparent);
+}
+
+.corner-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-top: 2px solid #8e44ad;
+    border-left: 2px solid #8e44ad;
+}
+
+.corner-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-bottom: 2px solid #8e44ad;
+    border-right: 2px solid #8e44ad;
+}
